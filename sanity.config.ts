@@ -4,6 +4,7 @@ import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
 import { myTheme } from './styles/theme';
 import StudioNavbar from './app/components/StudioNavbar';
+import Logo from './app/components/Logo';
 
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
@@ -22,7 +23,7 @@ export default defineConfig({
   },
   studio : {
     components : {
-      // logo: Logo,
+      logo: Logo,
       navbar: StudioNavbar,
       
     }

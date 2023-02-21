@@ -3,6 +3,9 @@ module.exports = {
   reactStrictMode: true,
   experimental : {
     appDir: true
+  }, 
+  images: {
+    domains: ["www.logodesign.net"],
   }
 }
 
