@@ -1,5 +1,6 @@
 import '../../styles/globals.css'
 import Header from '../components/Header'
+import Banner from '../components/Banner'
 
 
 export default function RootLayout({
@@ -11,7 +12,9 @@ export default function RootLayout({
     <html>
       <body>
       <Header />
-        {children}
+      <Banner />
+
+      {children}
         </body>
     </html>
   )

@@ -17,7 +17,14 @@ function Header () {
             <h1>CodeWithNurez</h1>
         </div>
 
-        <div></div>
+        <div>
+            <Link 
+            href='http://saliunurudeen.netlify.app'
+            className="px-5 py-3 text-sm md:text-base bg-gray-900 text-[#F7AB0A] flex items-center rounded-full text-center"
+            >
+            Visit to check my portfolio
+            </Link>
+        </div>
     </header>
   )
 }
