@@ -16,7 +16,9 @@ export default defineConfig({
   title: "Nurez Content Studio",
   projectId: projectId,
   dataset: dataset,
-  plugins: [deskTool(), visionTool()],
+  plugins: [deskTool({
+    defaultDocumentNode:
+  }), visionTool()],
 
   schema: {
     types: schemaTypes,
