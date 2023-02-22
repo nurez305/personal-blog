@@ -69,3 +69,8 @@ interface Title {
     _type : "string";
     current : string;
 }
+
+// interface Description {
+//     _type : "string";
+//     current : string
+// }
