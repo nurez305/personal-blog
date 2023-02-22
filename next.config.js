@@ -5,7 +5,7 @@ module.exports = {
     appDir: true
   }, 
   images: {
-    domains: ["www.logodesign.net"],
+    domains: ["www.logodesign.net", "cdn.sanity.io"],
   }
 }
 
