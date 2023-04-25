@@ -15,8 +15,8 @@ export default defineConfig({
   basePath: "/studio",
   name: "nurez_Content_studio",
   title: "Nurez Content Studio",
-  projectId,
-  dataset,
+  projectId : projectId as string,
+  dataset : dataset as string,
   plugins: [deskTool({
     defaultDocumentNode: getDefaultDocumentNode
   }), visionTool()],
