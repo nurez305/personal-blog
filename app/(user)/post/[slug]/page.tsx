@@ -5,11 +5,29 @@ import urlFor from "../../../../lib/urlFor"
 import Image from "next/image"
 import { PortableText } from "@portabletext/react"
 import { RichTextComponents } from "../../../components/RichTextComponents"
+import { Post } from "../../../../typings"
 
 type Props = {
      params : {
         slug : string
      }
+}
+
+export const revalidate = 30
+
+export async function generateStaticParams(){
+    const query = groq`*[_type=='post'] {
+        slug
+    }    
+    `
+
+    const slugs : Post[] = await client.fetch(query);
+    const slugRoutes = slugs.map((slug) => slug.slug.current)
+
+    return slugRoutes.map((slug)=>({
+        slug
+    }))
+
 }
 
 
@@ -23,7 +41,7 @@ async function Post({params : {slug}} : Props) {
         categories[]->
     }
     `
-    const post : any = await client.fetch(query, {slug})
+    const post : Post = await client.fetch(query, {slug})
 
   return (
     <article className="px-10 pb-28">
