@@ -3,7 +3,7 @@ import Link from "next/link"
 
 function Header () {
   return (
-    <header className=" flex items-center justify-between space-x-2 font-bold px-10 py-5 "> 
+    <header className=" flex items-center justify-between space-x-4 font-bold px-10 py-5 "> 
         <div className="flex items-center space-x-2">
             <Link href="/">
             <Image
@@ -14,7 +14,9 @@ function Header () {
             alt='logo' 
         />
             </Link>
+            <Link href="/">
             <h1>CodeWithNurez</h1>
+            </Link>
         </div>
 
         <div>
@@ -22,7 +24,7 @@ function Header () {
             href='http://saliunurudeen.netlify.app'
             className="w-32 px-5 py-3 text-xs md:text-base md:w-48 bg-gray-900 text-[#F7AB0A] flex items-center rounded-full text-center lg:w-48"
             >
-            Visit to check my portfolio
+            Visit my portfolio website
             </Link>
         </div>
     </header>
