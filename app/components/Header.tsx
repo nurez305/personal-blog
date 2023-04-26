@@ -15,7 +15,7 @@ function Header () {
         />
             </Link>
             <Link href="/">
-            <h1>CodeWithNurez</h1>
+            <h1 >Code<span className="text-[#F7AB0A]">With</span>Nurez</h1>
             </Link>
         </div>
 
