@@ -20,7 +20,7 @@ function Header () {
         <div>
             <Link 
             href='http://saliunurudeen.netlify.app'
-            className="px-5 py-3 text-sm md:text-base bg-gray-900 text-[#F7AB0A] flex items-center rounded-full text-center"
+            className="w-32 px-5 py-3 text-xs md:text-base md:w-48 bg-gray-900 text-[#F7AB0A] flex items-center rounded-full text-center lg:w-48"
             >
             Visit to check my portfolio
             </Link>
