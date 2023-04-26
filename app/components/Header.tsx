@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import Logo from "../components/mylogo.jpeg"
 
 function Header () {
   return (
@@ -10,7 +11,7 @@ function Header () {
             className='rounded-full object-cover'
             height={50}
             width={50}
-            src="http://www.logodesign.net/images/abstract-logo.png"
+            src={Logo}
             alt='logo' 
         />
             </Link>
@@ -22,7 +23,7 @@ function Header () {
         <div>
             <Link 
             href='http://saliunurudeen.netlify.app'
-            className="w-32 px-5 py-3 text-xs md:text-base md:w-48 bg-gray-900 text-[#F7AB0A] flex items-center rounded-full text-center lg:w-48"
+            className="w-32 px-5 py-3 text-xs md:text-base md:w-48 bg-gray-800 text-[#F7AB0A] flex items-center rounded-full text-center lg:w-48"
             >
             Visit my portfolio website
             </Link>
