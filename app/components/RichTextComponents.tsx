@@ -54,7 +54,7 @@ marks : {
             <Link 
             href={value.href} 
             rel={rel}
-            className="underline decoration-[#F7AB0A] hover:decoration-black"
+            className="underline decoration-[#F7AB0A] hover:decoration-black text-[#F7AB0A]"
             >{children}</Link>
         )
     }
